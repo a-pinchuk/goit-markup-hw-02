@@ -4,13 +4,15 @@
     --primary-background-color: #F5F5F5;
     --secondary-background-color: #2F303A;
     --secondary-color: #2196F3;
+    --white-color: #FFFFFF;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
-    background-color: var(--primary-background-color);
+    background-color: var(--white-color);
     letter-spacing: 0.03em;
+    font-size: 14px;
 }
 /* INDEX HTML */
     /* HEADER */
@@ -24,18 +26,18 @@ body {
 
 .header-logo:hover,
 .header-logo:focus {
-    text-decoration-line: underline;
-    text-decoration-color: var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 
 .header-links {
         font-weight: 500;
-        font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         list-style: none;
 }
+
+
 
 .nav-link {
     color: var(--primary-text-color);
@@ -46,6 +48,10 @@ body {
 .nav-link:hover,
 .nav-link:focus{
     color: var(--secondary-color);
+}
+
+.nav-link.current {
+    color: var(--secondary-color)
 }
 
 .header-logo .web {
@@ -121,6 +127,10 @@ body {
         text-transform: uppercase;
 }
 
+.section-portfolio {
+    background-color: var(--primary-background-color);
+}
+
 .section-features .text {
         font-size: 14px;
         line-height: 1.71px;
@@ -141,7 +151,7 @@ body {
 .section .name {
         font-weight: 500;
         font-size: 16px;
-        line-height: 1.19px;
+        line-height: 1.19;
 }
 
 .section .position {
@@ -171,8 +181,7 @@ body {
 
 .footer-logo:hover,
 .footer-logo:focus{
-    text-decoration-line: underline;
-    text-decoration-color: var(--secondary-color);
+    color: var(--secondary-color);
 }
 
 .address-ul {
@@ -209,12 +218,15 @@ button {
     color: var(--primary-text-color);
     background-color: #F5F4FA;
     cursor: pointer;
+    border: none
 }
 
 button:hover,
 button:focus {
     background-color: var(--secondary-color);
     color: var(--primary-background-color);
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .nav-link .examples {
