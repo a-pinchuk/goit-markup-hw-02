@@ -6,7 +6,7 @@
     --secondary-color: #2196F3;
     --white-color: #FFFFFF;
 }
-
+/* BODY */
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
@@ -14,9 +14,9 @@ body {
     letter-spacing: 0.03em;
     font-size: 14px;
 }
+
 /* INDEX HTML */
     /* HEADER */
-        /* LOGO */
 .header-logo {
     color: #000000;
     font-family: 'Raleway', sans-serif;
@@ -29,41 +29,31 @@ body {
     color: var(--secondary-color);
 }
 
-
-.header-links {
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        list-style: none;
-}
-
-
-
-.nav-link {
-    color: var(--primary-text-color);
-    text-decoration: none;
-    list-style: none;
-}
-
-.nav-link:hover,
-.nav-link:focus{
+.header-logo>span {
     color: var(--secondary-color);
+}
+
+.lists { 
+    list-style: none;
+    font-style: normal;
 }
 
 .nav-link.current {
     color: var(--secondary-color)
 }
 
-.header-logo .web {
-    color: var(--secondary-color);
-}
-
-.mail {
-    color:var(--secondary-color);
-}
-
-.nav-address {
+.nav-link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
     list-style: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--secondary-color);
 }
 
 .header .address-link {
@@ -77,13 +67,10 @@ body {
         list-style: none;
 }
 
-        /* NAV ADDRESS */
 .header .address-link:hover,
 .header .address-link:focus {
     color: var(--secondary-color);
 }
-
-
 
     /* MAIN */
 .hero {
@@ -120,80 +107,66 @@ body {
 }
 
         /* FEATURES */
-.section-features .title {
+.features .title {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
 }
 
-.section-portfolio {
-    background-color: var(--primary-background-color);
-}
-
-.section-features .text {
+.features .text {
         font-size: 14px;
         line-height: 1.71px;
         color: var(--secondary-text-color);
 }
 
-.what-company-do .title {
+.todo .title {
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
 }
 
-.list {
-    list-style: none;
+.team .title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
 }
 
-.section .name {
+.team .name {
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
 }
 
-.section .position {
+.team .position {
         font-size: 16px;
         line-height: 1.19;
         color: var(--secondary-text-color);
 }
 
 
-
+/* FOOTER */
 .footer {
     background-color: var(--secondary-background-color);
-    
 }
 
-.footer-logo {
+.footer .logo {
     color: #FFFFFF;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
 }
 
-.footer-logo .web{
+.footer .logo .web{
     color: var(--secondary-color);
     
 }
 
-.footer-logo:hover,
-.footer-logo:focus{
+.footer .logo:hover,
+.footer .logo:focus{
     color: var(--secondary-color);
-}
-
-.address-ul {
-    font-style: normal;
-    list-style: none;
-}
-
-.street {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        color: #FFFFFF;
 }
 
 .footer .address {
@@ -205,7 +178,10 @@ body {
 }
 
 .address .street {
-    color:#FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #FFFFFF;
 }
 
 .footer .address:hover,
@@ -214,22 +190,29 @@ body {
 }
 
 /* PORTFOLIO */
-button {
+/* button {
     color: var(--primary-text-color);
     background-color: #F5F4FA;
     cursor: pointer;
     border: none
+} */
+
+.nav-button {
+    color: var(--primary-text-color);
+        background-color: #F5F4FA;
+        cursor: pointer;
+        border: none
 }
 
-button:hover,
-button:focus {
+.nav-button:hover,
+.nav-button:focus {
     background-color: var(--secondary-color);
     color: var(--primary-background-color);
     border-radius: 4px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.nav-link .examples {
+.examples {
     color: var(--primary-text-color);
     text-decoration: none;
 }
@@ -246,3 +229,4 @@ button:focus {
         line-height: 1.88;
         color: var(--secondary-text-color)
 }
+
