@@ -24,11 +24,6 @@ body {
     text-decoration: none;
 }
 
-.header-logo:hover,
-.header-logo:focus {
-    color: var(--secondary-color);
-}
-
 .header-logo>span {
     color: var(--secondary-color);
 }
@@ -89,6 +84,7 @@ body {
 
 .hero button {
         font-weight: 700;
+        border-radius: 4px;
         font-size: 16px;
         line-height: 1.88;
         display: flex;
@@ -115,7 +111,6 @@ body {
 }
 
 .features .text {
-        font-size: 14px;
         line-height: 1.71px;
         color: var(--secondary-text-color);
 }
@@ -164,13 +159,8 @@ body {
     
 }
 
-.footer .logo:hover,
-.footer .logo:focus{
-    color: var(--secondary-color);
-}
 
 .footer .address {
-        font-size: 14px;
         line-height: 1.71;
         color: var(--secondary-text-color);
         text-decoration: none;
@@ -179,7 +169,6 @@ body {
 
 .address .street {
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
     color: #FFFFFF;
 }
@@ -190,12 +179,6 @@ body {
 }
 
 /* PORTFOLIO */
-/* button {
-    color: var(--primary-text-color);
-    background-color: #F5F4FA;
-    cursor: pointer;
-    border: none
-} */
 
 .nav-button {
     color: var(--primary-text-color);
